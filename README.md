@@ -17,6 +17,12 @@ const Hello = dumb(function Hello(props) {
 Hello.propTypes = { name: React.PropTypes.string.isRequried }
 ```
 
+## How do I handle state/context/lifecycle hooks?
+
+This is intended for building the very simple components that don't need any of
+those things. You can append them manually if you like, but I'm not sure why you
+would.
+
 ## Why would I use this?
 
 When writing React components you often have sections of the UI that you display
