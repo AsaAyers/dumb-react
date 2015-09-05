@@ -1,5 +1,5 @@
 
-export default function dumb(render, displayName = render.name) {
+module.exports = function dumb(render, displayName = render.name) {
     const Component = function(props) {
         return {
             props,

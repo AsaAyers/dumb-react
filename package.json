@@ -1,0 +1,33 @@
+{
+  "name": "dumb-react",
+  "version": "1.0.0",
+  "description": "Creates dumb React components using only a render method",
+  "main": "dumb.js",
+  "scripts": {
+    "test": "eslint dumb.js dumb-test.jsx && babel-node dumb-test.jsx | faucet",
+    "compile": "babel -d dist/ dumb.js",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsaAyers/dumb-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Asa Ayers <Asa@AsaAyers.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AsaAyers/dumb-react/issues"
+  },
+  "homepage": "https://github.com/AsaAyers/dumb-react#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "eslint": "^1.3.1",
+    "eslint-plugin-react": "^3.3.1",
+    "faucet": "0.0.1",
+    "react": "^0.13.3",
+    "tape": "^4.2.0",
+    "tape-catch": "^1.0.4"
+  }
+}
