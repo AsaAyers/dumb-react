@@ -1,6 +1,6 @@
 {
   "name": "dumb-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates dumb React components using only a render method",
   "main": "dist/dumb.js",
   "scripts": {
