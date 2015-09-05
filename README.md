@@ -4,7 +4,7 @@
 
 ## Quick Start
 
-```
+```js
 const dumb = require('dumb-react')
 
 const Hello = dumb(function Hello(props) {
@@ -30,7 +30,7 @@ conditionally, or you generate from a list of data. There are a few options on
 how to accomplish these. Here's a sample where I chose to create variables in my
 `render()`
 
-```
+```js
 export default class Sample extends React.Component {
     render() {
         const { items, total } = this.props
@@ -69,7 +69,7 @@ methods in the same component. I have a choice here. I could pass `items` and
 `total` to the functions that need them, or I could just call the functions with
 no parameters and let them handle pulling what they need off of `this.props`.
 
-```
+```js
 export default class Sample extends React.Component {
     renderItemElements(items) {
         return items.map((item) => {
@@ -105,7 +105,7 @@ export default class Sample extends React.Component {
 Those render methods don't really do much. Why not make them their own
 components? This is what `dumb-react` is for
 
-```
+```js
 const ItemElements = dumb(function ItemElements(props) {
     return props.items.map((item) => {
         return (
