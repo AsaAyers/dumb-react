@@ -2,7 +2,7 @@
   "name": "dumb-react",
   "version": "1.0.0",
   "description": "Creates dumb React components using only a render method",
-  "main": "dumb.js",
+  "main": "dist/dumb.js",
   "scripts": {
     "test": "eslint dumb.js dumb-test.jsx && babel-node dumb-test.jsx | faucet",
     "compile": "babel -d dist/ dumb.js",
